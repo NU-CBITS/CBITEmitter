@@ -1,15 +1,7 @@
 /********* CBITEmitter.m Cordova Plugin Implementation *******/
 
 #import <Cordova/CDV.h>
-
-// Provides a method for transmitting JSON-formatted data to a service. Uses a background session
-// so that requests will complete even if the application is suspended or crashes.
-@interface CBITEmitter : CDVPlugin {
-}
-
-- (void)emitData:(CDVInvokedUrlCommand*)command;
-
-@end
+#import "CBITEmitter.h"
 
 @implementation CBITEmitter
 
@@ -65,5 +57,4 @@
   //Client side errors are indicated with the error parameter
   NSLog(@"%@", @"complete");
 }
-
 @end
